@@ -1,0 +1,97 @@
+
+.container {
+    display: grid;
+    margin: 0px auto;
+    padding: 0 5px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer";
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* header */
+
+header {
+    display: grid;
+    grid-area: header;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: url("./frontend/images/2.jpg");
+    background-size: cover;
+    border: solid 1px #ccc7c8;
+    border-radius: 5px;
+    height: 125px;
+}
+
+.custom-nav{
+    margin-top: 40px;
+}
+.custom-nav li a{
+    text-decoration: none; 
+}
+
+nav {
+    display: grid;
+    grid-area: nav;
+    border: solid 1px #ccc7c8;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(16, 94, 240);
+    color: #fff;
+}
+nav li .nav-link{
+    color: #fff;
+    margin-right: 40px;
+}
+
+.logo{
+    margin: 10px 40px;
+    float:left
+}
+
+/* phan noi dung */
+
+main {
+    display: grid;
+    grid-area: main;
+    border: solid 1px #ccc7c8;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+footer {
+    grid-area: footer;
+    border: solid 1px #ccc7c8;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.list-group td {
+    border: 1px solid black;
+    border-collapse: collapse; 
+}
+.list-group th {
+    border: 1px solid black;
+    border-collapse: collapse; 
+}
+
+/* nut backtop */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 6px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+#myBtn:hover {
+    background-color: #f1f1f1;
+}
